@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930936218296",
+    "project_id": "todo-firebase-crud-24f77",
+    "storage_bucket": "todo-firebase-crud-24f77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930936218296:android:8e365537c3902a0878ca4d",
+        "android_client_info": {
+          "package_name": "com.example.crudfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRD2ztOfsK0gbJcq2eABHr7l-YJewvP_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
