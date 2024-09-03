@@ -5,19 +5,22 @@ class Todo {
   bool isDone;
   Timestamp createdOn;
   Timestamp updatedOn;
-  
+
   Todo({
     required this.task,
     required this.isDone,
     required this.createdOn,
-    required this.updatedOn
+    required this.updatedOn,
   });
 
-  Todo.fromJson(Map<String, Object?> json) : this(task: json['task'] as String, isDone: json['IsDone']! as bool,
-        createdOn: json['CreatedOn']! as Timestamp,
-        updatedOn: json['UpdatedOn']! as Timestamp,
-        );
-        
+Todo.fromJson(Map<String, Object?> json)
+    : this(
+        task: json['task'] as String? ?? '',
+        isDone: json['isDone'] as bool? ?? false,
+        createdOn: json['createdOn'] as Timestamp? ?? Timestamp.now(),
+        updatedOn: json['updatedOn'] as Timestamp? ?? Timestamp.now(),
+      );
+
   Todo copyWith({
     String? task,
     bool? isDone,
